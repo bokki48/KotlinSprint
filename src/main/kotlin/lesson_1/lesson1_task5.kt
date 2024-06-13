@@ -1,10 +1,13 @@
 package org.example.lesson_1
 
-fun main() {
-    val totalSeconds = 6429
-    val hours = totalSeconds / 3600
-    val minutes = (totalSeconds - hours * 3600) / 60
-    val seconds = totalSeconds - hours * 3600 - minutes * 60
+const val secondsInHour = 3600
+const val secondsInMinute = 60
 
-    println("Гагарин провёл в космосе - ${"%02d".format(hours)}:${"%02d".format(minutes)}:${"%02d".format(seconds)}")
+fun main() {
+    val totalSecondsInSpace = 6429
+    val hoursInSpace = totalSecondsInSpace / secondsInHour
+    val minutesInSpace = (totalSecondsInSpace - hoursInSpace * secondsInHour) / secondsInMinute
+    val secondsInSpace = totalSecondsInSpace - hoursInSpace * secondsInHour - minutesInSpace * secondsInMinute
+
+    println("%02d:%02d:%02d".format(hoursInSpace, minutesInSpace, secondsInSpace))
 }
