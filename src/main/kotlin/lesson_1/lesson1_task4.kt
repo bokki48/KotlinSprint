@@ -13,5 +13,5 @@ fun main() {
     println("Часть дня - $partOfDay")
     println("Секунды - $seconds")
     println("Часть года - $partOfYear")
-    println("Аппогей орбиты - $apogee")
+    print("Аппогей орбиты - $apogee")
 }
