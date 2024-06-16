@@ -1,11 +1,11 @@
 package org.example.lesson_4
 
+const val LOW_WEIGHT_BASIC_CARGO = 35
+const val HIGH_WEIGHT_BASIC_CARGO = 100
+const val VOLUME_BASIC_CARGO = 100
+
+
 fun main() {
-    val lowWeightBasicCargo = 35
-    val highWeightBasicCargo = 100
-
-    val volumeBasicCargo = 100
-
     val weightFirstCargo = 20
     val volumeFirstCargo = 80
 
@@ -14,10 +14,16 @@ fun main() {
 
     println(
         "Груз с весом $weightFirstCargo кг и объёмом $volumeFirstCargo соответствует категории \'Average\':" +
-                " ${(weightFirstCargo > lowWeightBasicCargo && weightFirstCargo <= highWeightBasicCargo) && volumeFirstCargo < volumeBasicCargo}"
+                " ${
+                    (weightFirstCargo > LOW_WEIGHT_BASIC_CARGO && weightFirstCargo <= HIGH_WEIGHT_BASIC_CARGO)
+                            && volumeFirstCargo < VOLUME_BASIC_CARGO
+                }"
     )
     println(
         "Груз с весом $weightSecondCargo кг и объёмом $volumeSecondCargo соответствует категории \'Average\':" +
-                " ${(weightFirstCargo > lowWeightBasicCargo && weightFirstCargo <= highWeightBasicCargo) && volumeFirstCargo < volumeBasicCargo}"
+                " ${
+                    (weightFirstCargo > LOW_WEIGHT_BASIC_CARGO && weightFirstCargo <= HIGH_WEIGHT_BASIC_CARGO)
+                            && volumeFirstCargo < VOLUME_BASIC_CARGO
+                }"
     )
 }
