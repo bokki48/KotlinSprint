@@ -5,11 +5,11 @@ const val AUTHORIZED_USER_PASSWORD = "PanGalactic"
 
 fun main() {
     print("Введите имя пользователя: ")
-    val enteringUserName = readLine()!!
+    val enteringUserName = readln()
 
     if (enteringUserName == AUTHORIZED_USER_NAME) {
         print("Введите пароль: ")
-        val enteringUserPassword = readLine()!!
+        val enteringUserPassword = readln()
         if (enteringUserPassword == AUTHORIZED_USER_PASSWORD)
             println("Уважаемый $enteringUserName, добро пожаловать на борт корабля!")
         else println("Пароль неверный! Повторите попытку входа.")
