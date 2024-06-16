@@ -5,10 +5,10 @@ const val SECOND_WINNIG_NUMBER = 25
 
 fun main() {
     print("Введите первое число от 0 до 42: ")
-    val firstEnteringNumber = readLine()!!.toInt()
+    val firstEnteringNumber = readln().toInt()
 
     print("Введите второе число от 0 до 42: ")
-    val secondEnteringNumber = readLine()!!.toInt()
+    val secondEnteringNumber = readln().toInt()
 
     if ((firstEnteringNumber == FIRST_WINNIG_NUMBER && secondEnteringNumber == SECOND_WINNIG_NUMBER) ||
         (firstEnteringNumber == SECOND_WINNIG_NUMBER && secondEnteringNumber == FIRST_WINNIG_NUMBER)
