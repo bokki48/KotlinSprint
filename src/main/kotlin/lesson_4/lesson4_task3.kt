@@ -1,16 +1,17 @@
 package org.example.lesson_4
 
-fun main() {
-    val auspiciousIsSun = true
-    val auspiciousIsOutdoorAwning = true
-    val auspiciousAirMoisture = 20
-    val notAuspiciousCurrentSeason = "Зима"
+const val IS_SUNNY = true
+const val IS_AWNING_OPEN = true
+const val AUSPICIOUS_AIR_MOISTURE = 20
+const val NOT_AUSPICIOUS_AIR_MOISTURE = "Зима"
 
-    val todayIsSun = true
-    val todayIsOutdoorAwning = true
+fun main() {
+    val isSunnyToday = IS_SUNNY
+    val isOwningOpenToday = IS_AWNING_OPEN
     val todayAirMoisture = 20
     val todayCurrentSeason = "Зима"
 
-    val currentConditionsForGrowth = (auspiciousIsSun == todayIsSun) && (auspiciousIsOutdoorAwning == todayIsOutdoorAwning) && (auspiciousAirMoisture == todayAirMoisture) && (notAuspiciousCurrentSeason != todayCurrentSeason)
+    val currentConditionsForGrowth = (isSunnyToday) && (isOwningOpenToday) &&
+            (todayAirMoisture == AUSPICIOUS_AIR_MOISTURE) && (todayCurrentSeason != NOT_AUSPICIOUS_AIR_MOISTURE)
     println("Благоприятные ли условия сейчас для роста бобовых? $currentConditionsForGrowth")
 }
