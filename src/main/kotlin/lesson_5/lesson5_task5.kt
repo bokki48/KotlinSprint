@@ -22,11 +22,11 @@ fun main() {
     println(thirdWinningNumber)
 
     print("Введите первое число: ")
-    val firstEnteringNumber = readLine()!!.toInt()
+    val firstEnteringNumber = readln().toInt()
     print("Введите второе число: ")
-    val secondEnteringNumber = readLine()!!.toInt()
+    val secondEnteringNumber = readln().toInt()
     print("Введите третье число: ")
-    val thirdEnteringNumber = readLine()!!.toInt()
+    val thirdEnteringNumber = readln().toInt()
     val listEnteringNumbers = listOf(firstEnteringNumber, secondEnteringNumber, thirdEnteringNumber)
 
     val countOfMatchedNumbers = (listWinningNumbers.intersect(listEnteringNumbers)).size
